@@ -1,0 +1,485 @@
+<HTML>
+<HEAD>
+<!-- Global site tag (gtag.js) - Google Analytics start -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-207940721-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-207940721-1');
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics end -->
+
+
+  <META http-equiv="Content-Type"  content="text/html; charset=utf-8" >
+  <META name="viewport"  content="width=device-width, initial-scale=1">
+
+
+<TITLE>台服#巡演#用鑽計算器</TITLE>
+</HEAD>
+
+
+<style>
+body {
+    background-color: lightblue	;
+}
+
+html{
+	font-family: "Microsoft soft","Times";
+	line-height: 1.2;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-ms-overflow-style: scrollbar;
+	-webkit-input-placeholder ;
+	height : 1000px;
+	
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: steelblue	;
+	font-size: 2rem;
+	font-weight : bold;
+	height: auto;
+
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-color: steelblue	;
+    background-clip: border-box;
+    border-radius: 0.5rem;
+	align-items: center;
+	width: auto;
+	height: auto;
+	
+}
+
+.blocks {
+    display: grid;
+    grid-gap: 0;
+	background: steelblue;
+	width: auto;
+	font-size: 1.5rem;
+	color: yellow;
+
+	
+}
+
+.setting-block {
+	padding : 1rem;
+	width: auto;
+	height: auto;
+    display: flex;
+    flex-direction: column-reversed ;
+	background:lightblue;
+	justify-content: center;	
+	align-items: self; 
+	font-size: 1.75rem;
+	color:midnightblue;
+}
+
+.show-block {
+	padding : 1rem;
+	width: auto;
+	height: auto;
+    display: flex;
+    flex-direction: column-reversed ;
+	background:lightblue;
+	justify-content: center;	
+	align-items: self; 
+	color:midnightblue;
+	font-size: 1.75rem;
+	text-align:left;
+}
+	
+select{
+	font-family: "Microsoft soft","Times";
+	font-size: 1.75rem;
+	height: 2.2rem;
+	color:midnightblue;
+	background:aliceblue;
+	text-align:center;
+}
+
+form{
+	font-family: "Microsoft soft","Times";
+	height: 2rem;
+	color:midnightblue	;
+	text-align:center;
+}
+	
+input{
+	height: 2.2rem;
+	padding: 0.1rem 0.2rem;
+	font-size: 1.75rem;
+	font-family: "Microsoft soft", "Times";
+	font-color:midnightblue;
+	background:aliceblue; 
+	border-style:solid;
+	border-width: 0.1rem;
+	border-radius: 0.1rem;
+	autocomplete: off;
+	text-align:center;
+	position: center;
+	color:midnightblue;
+	
+}
+
+.button
+{   color:midnightblue;
+	height: 3rem;
+	width: 7rem;
+	font-size: 1.5rem;
+	background-color:lightblue;
+	border: none;
+}
+
+
+@media only screen and (max-device-width: 600px) {
+
+body {
+    background-color: steelblue	;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-color: steelblue	;
+    background-clip: border-box;
+	align-items: center;
+	width: auto;
+	height: auto;
+	
+}
+
+.card-header {
+    padding: 0rem 0rem;
+    margin-bottom: 0;
+    background-color: steelblue	;
+	font-size: 1rem;
+	font-weight : bold;
+}
+
+.blocks {
+    display: grid;
+    grid-gap: 0;
+	background: steelblue;
+	width: auto;
+	font-size: 0.9rem;
+	color: yellow;
+	
+
+	
+}
+
+.setting-block {
+	padding : 0.25rem;
+	width: auto;
+	height: auto;
+    display: flex;
+    flex-direction: column-reversed ;
+	background:lightblue;
+	justify-content: center;	
+	align-items: self; 
+	font-size: 1rem;
+	color:midnightblue;
+	
+}
+
+.show-block {
+	padding : 0.25rem;
+	width: auto;
+	height: auto;
+    display: flex;
+    flex-direction: column-reversed ;
+	background:lightblue;
+	justify-content: center;	
+	align-items: self; 
+	color:midnightblue;
+	font-size: 1rem;
+}
+
+
+select{
+	font-family: "Microsoft soft","Times";
+	font-size: 1rem;
+	height: 1.5rem;
+	color:midnightblue;
+	background:aliceblue;
+	text-align:center
+}
+
+form{
+	font-family: "Microsoft soft","Times";
+	/height: 1.5rem;
+	color:midnightblue	;
+	text-align:center;
+}
+	
+input{
+	height: 1.5rem;
+	padding: 0.1rem 0.2rem;
+	font-size: 1rem;
+	font-family: "Microsoft soft", "Times";
+	font-color:midnightblue;
+	background:aliceblue; 
+	border-style:solid;
+	border-width: 0.1rem;
+	border-radius: 0.1rem;
+	autocomplete: off;
+	text-align:center;
+	position: center;
+	color:midnightblue;	
+}
+
+.button
+{   color:midnightblue;
+	height: 3rem;
+	width: 7rem;
+	font-size: 1.5rem;
+	background-color:lightblue;
+	border: none;
+}
+
+
+}
+
+
+</style>
+
+
+
+<form name="Data" action="tour_cal_v3.php" method="post">
+
+
+<div class = "card" >
+	<div class = "card-header">
+		活動類型：巡演
+	<br>
+	</div>
+	
+
+	<div class = "blocks" >
+	    
+	    為避免用到舊的數據，請先刷新(F5)再輸入<br>
+        *下拉到底有假設前提*<br>
+		<a href="https://aries9059.wordpress.com/2021/07/19/diamond_calc/">*輸入説明請點我*</a>
+	    
+		<div class = "setting-block" >
+			現在時間：
+			<br>
+			<script>
+				Today = new Date();
+				yy=Today.getFullYear();
+				mm=Today.getMonth()+1;
+				dd=Today.getDate();
+				hh=Today.getHours();
+				MM=Today.getMinutes();
+				document.write(yy+"年"+mm+"月"+dd+"日"+hh+"時"+MM+"分");
+			</script>
+		</div>
+	<br>
+		<div class = "setting-block" >
+			登入獎勵：
+			<select name="gift" required>
+				<option value="">下拉選取</option>
+                <option value="27">27個哨子</option>
+				<option value="121">121個哨子</option>
+			</select>
+		</div>
+	<br>
+		<div class = "setting-block" >
+			結束時間:<br>(港台星馬)<br>(UTC+8)
+			<input required type="date" value="yyyy/mm/dd" name="date_end" style=width:auto>
+			<input required type="time" value=" HH:MM" name="time_end" style=width:auto>
+		</div>
+	<br>
+		<div class = "setting-block" >
+		現在活動積分：
+		<input required type="number" name="pt_now" placeholder="點擊輸入" style=width:150px inputmode="numeric">
+		</div>
+	<br>
+		<div class = "setting-block" >
+		目標積分：
+		<input required type="number" name="pt_target" placeholder="點擊輸入" style=width:150px inputmode="numeric">
+		</div>
+	<br>	
+		<div class = "setting-block" >
+		第1-3首平均分數：<input required type="number" name="score_three" placeholder="點擊輸入" style=width:150px inputmode="numeric"> 
+		</div>
+	<br>
+		<div class = "setting-block" >
+		BP用量（第1-3首）：
+			<select name="bp_use_3" required>
+				<option value="">下拉選取</option>
+				<option value="3">3BP</option>
+				<option value="6">6BP</option>
+				<option value="10">10BP</option>
+			</select>
+		</div>
+	<br>
+		<div class = "setting-block" >
+		fever%：<input required type="number" name="fever" placeholder="點擊輸入" style=width:150px inputmode="numeric">
+		</div >
+	<br>
+		<div class = "setting-block" >
+		第4首分數：<input required type="number" name="score_four" placeholder="點擊輸入" style=width:150px inputmode="numeric">
+		</div>
+	<br>
+		<div class = "setting-block" >
+		BP用量（第4首）：
+			<select name="bp_use_4" required>
+				<option value="">下拉選取</option>
+				<option value="3">3BP</option>
+				<option value="6">6BP</option>
+				<option value="10">10BP</option>
+			</select>
+		</div>
+	<br>
+		<div class = "setting-block" >
+		加成%：<input required type="number" name="add" placeholder="點擊輸入" style=width:150px inputmode="numeric">
+		</div >
+	<br>
+		<div class = "setting-block" >
+		目前玩家等級：<input required type="number" name="level_now" placeholder="點擊輸入" style=width:150px inputmode="numeric">
+		</div >
+	<br>
+		<div class = "setting-block" >
+		距離升級還需要：<input required type="number" name="exp_need" placeholder="點擊輸入" style=width:150px inputmode="numeric">
+		</div>
+	<br>
+		<div class = "setting-block" >
+		目前bp數：<input required type="number" name="bp_now"placeholder="點擊輸入" style=width:150px inputmode="numeric">
+		</div>
+	<br>
+		<div class = "setting-block" >
+		目前工作券數：<input required type="number" name="work_now"placeholder="點擊輸入" style=width:150px inputmode="numeric">
+		</div>
+	<br>
+		<div class = "setting-block" >
+		目前擴音器數量：<input required type="number" name="loudspeaker_now"placeholder="點擊輸入" style=width:150px inputmode="numeric">
+		</div>
+	<br>
+		<div class = "setting-block" >
+		哨子數（禮包要<br>自己加；大月不用）：<input required type="number" name="whistle_now" placeholder="點擊輸入" style=width:150px inputmode="numeric">
+		</div >
+	<br>
+		<div class = "setting-block" >
+		翻倍券數（禮包要<br>自己加；大月不用）：<input required type="number" name="double_now" placeholder="點擊輸入" style=width:150px inputmode="numeric">
+		</div>
+	<br>
+		<div class = "setting-block" >
+		工作券上限：<select name="work_max" required>
+				<option value="">下拉選取</option>
+				<option value="3">3張</option>
+				<option value="5">5張</option>
+				<option value="8">8張</option>
+				<option value="10">10張</option>
+				<option value="11">11張</option>
+				
+			</select>
+		</div>
+	<br>
+		<div class = "setting-block" >
+		工作券回復時間：
+			<select name="work_time" required>
+				<option value="">下拉選取</option>
+				<option value="60">60分鐘</option>
+				<option value="56">56分鐘</option>
+				<option value="53">53分鐘</option>
+				<option value="50">50分鐘</option>
+				<option value="45">45分鐘</option>
+				<option value="43">43分鐘</option>
+			</select>
+		</div>
+	<br>
+		<div class = "setting-block" >
+		限定工作與否：
+			<select name="work_event" required>
+				<option value="">下拉選取</option>
+				<option value="work_event">限定工作</option>
+				<option value="work_normal">日常工作</option>
+			</select>
+		</div>
+	<br>
+		<div class = "setting-block" >
+		每日因滿溢而&ensp;<br>浪費的BP數：<input required type="number" name="bp_waste"placeholder="點擊輸入" style=width:150px inputmode="numeric">
+		</div >
+	<br>
+		<div class = "setting-block" >
+		每日因滿溢而&ensp;<br>浪費工作券數：<input required type="number" name="work_waste"placeholder="點擊輸入" style=width:150px inputmode="numeric">
+		</div>
+	<br>
+		<div class = "setting-block" >
+		有無完成3輪星光的活動曲：
+			<select name="stage_complete" required>
+				<option value="">下拉選取</option>
+				<option value="1">能每日完成</option>
+				<option value="0">無法每日完成</option>
+			</select>
+		</div >
+	<br>
+		<div class = "setting-block" >
+		有無氪大月卡：
+			<select name="month_big" required>
+				<option value="">下拉選取</option>
+				<option value="1">有氪</option>
+				<option value="0">沒有氪</option>
+			</select>
+		</div >
+	<br>
+		<div class = "setting-block" >
+		有無完成每日任務：
+			<select name="day_mission" required>
+				<option value="">下拉選取</option>
+				<option value="1">能每日完成</option>
+				<option value="0">無法每日完成</option>
+			</select>
+		</div >
+	<br>
+		<div class = "setting-block" >
+		有無每日一付費抽卡：
+			<select name="day_draw" required>
+				<option value="">下拉選取</option>
+				<option value="1">每日一付費抽</option>
+				<option value="0">無每日一付費抽</option>
+			</select>
+		</div >
+
+	</div>
+<br><br>
+<input class="button" type="submit" name="submit" value="計算" ><br><br>
+		
+		<div class = "show-block"  >
+		
+			<span style="text-align:center">預設假設：</span>
+			1. 有bp會優先拿去打歌而非打工。<br>
+			2. 輸入的資源預計全部用完，不想<br>
+			用的話在該欄位填0或者預計要用的<br>
+			數量就好。<br>
+			3. 天數計算是以完成4首為前提，不<br>
+			計算只打1首就退出換別天的情況。
+			
+		</div >
+		<br>
+</div>
+
+<h1>
+</h1>
+
+
+</form>
+</BODY>
+</HTML>
